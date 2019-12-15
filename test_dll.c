@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr,"%s\n",error);
 		exit(1);
 	}
-	fuc_get=dlsym(handle,"get");
+	func_get=dlsym(handle,"get");
 	if((error=dlerror())!=NULL){
 		fprintf(stderr,"%s\n",error);
 		exit(1);
